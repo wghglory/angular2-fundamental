@@ -111,6 +111,7 @@ I want to create a address component as a child component. The parent component,
 - parent template uses the child selector, and [child object name] = "parent"
 
 1) create child component events-address.component.ts
+
 ```javascript
 //child component, talk with parent events-list.component.ts
 import {Component,Input} from '@angular/core'
@@ -125,6 +126,7 @@ export class EventsAddressComponent{
 ```
 
 2) modify parent component template, [address] is child object name, "event.location" is parent data
+
 ```html
 <div>
     <h1>Upcoming Angular 2 Events</h1>
@@ -140,6 +142,7 @@ export class EventsAddressComponent{
 ```
 
 3) import child component to app.module
+
 ```javascript
 import { EventsAddressComponent } from './events/events-address.component'
 
@@ -194,6 +197,7 @@ export class EventsAddressComponent{
 ### 3. Using Template Variables To Interact with Child Components (parent access to child data, easier than method 2)
 
 1) child component events-address.component.ts define public property and method
+
 ```javascript
 //child component, talk with parent events-list.component.ts
 @Component({
@@ -220,6 +224,7 @@ export class EventsAddressComponent {
 ## Styling Components
 
 > By default, style scope is current component: the class defined below works only in current component, any other component applied same class won't work.
+>
 > Global css can be placed in styles.css
 
 ```javascript
@@ -233,6 +238,7 @@ export class EventsAddressComponent {}
 ## Create Navbar
 
 create nav/nav.component.ts and its template nav.component.html, then export component into module.
+
 ```javascript
 import {Component} from '@angular/core'
 
