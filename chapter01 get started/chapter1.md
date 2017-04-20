@@ -1,4 +1,4 @@
-# [Angular 2 Fundamentals Pluralsight Course](http://app.pluralsight.com/courses/angular-fundamentals)
+# Get Started
 
 ### Systemjs
 

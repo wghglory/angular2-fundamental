@@ -1,0 +1,13 @@
+<div>
+    <h1>Upcoming Angular 2 Events</h1>
+    <div class="well hoverwell thumbnail">
+        <h2>Event: {{event.name}}</h2>
+        <div>Price: ${{event.price}}</div>  <!-- no need \$ -->
+        <div>Date: {{event.date}}</div>
+        <div>Time: {{event.time}}</div>
+        <!-- <div>Address: {{event.location.address}}, {{event.location.city}}, {{event.location.country}}</div> -->
+        <events-address [address]="event.location" (myclick)="clickWithAnyName($event)" #childPointer></events-address>
+    </div>
+    <button (click)="childPointer.getAuthor()" class="btn-primary btn">Test template variable</button>
+    <h3>{{childPointer.author}}</h3>
+</div>
