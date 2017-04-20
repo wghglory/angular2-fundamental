@@ -13,3 +13,4 @@ npm start
 
 - chapter01: systemJS, tsconfig, package.json; first component, module and bootstrap module
 - chapter02: create component using external templates, communication between parent and child components, styling component
+- chapter03: ngIf, ngFor, [hidden], [ngSwitch], [ngClass], [ngStyle]
