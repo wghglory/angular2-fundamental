@@ -9,8 +9,8 @@ export class EventListResolver implements Resolve<any>{
     }
 
     resolve() {
-        // map() return observerable; subscribe() return subscription
-        // in resolve, we need to return observerable. angular can watch observerable and see if it finishes
+        // map() return Observable; subscribe() return subscription
+        // in resolve, we need to return Observable. angular can watch Observable and see if it finishes
         return this.eventService.getEvents().map(events => events);
     }
 }

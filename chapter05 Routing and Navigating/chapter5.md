@@ -431,7 +431,7 @@ export class EventsListComponent implements OnInit {
 }
 ```
 
-Now when we navigate to base page, it takes 2 second before showing data. It's not good. So we will use a resolver to handle this issue.
+Now when we navigate to base page, we can immediately see `<h1>Upcoming Angular 2 Events</h1>`, but it takes 2 second before showing data. Similar issue is like table header shows immediately but data is still loading. So we will use a resolver to make sure the template html along with data will be loaded once at the same time
 
 3) create events-list-resolver.service.ts and then register provider in module
 
@@ -447,8 +447,8 @@ export class EventListResolver implements Resolve<any>{
     }
 
     resolve() {
-        // map() return observerable; subscribe() return subscription
-        // in resolve, we need to return observerable. angular can watch observerable and see if it finishes
+        // map() return Observable; subscribe() return subscription
+        // in resolve, we need to return Observable. angular can watch Observable and see if it finishes
         return this.eventService.getEvents().map(events => events);
     }
 }
@@ -487,10 +487,6 @@ export class EventsListComponent implements OnInit {
     }
 }
 ```
-
-> Not quite clear what the benefit it is...
-> Previously we target the route, call the service and load data in component
-> Now when we target route, resolver load data once
 
 ### Styling Active Links
 
