@@ -9,7 +9,7 @@ import {ToastrService} from '../common/toastr.service'
     templateUrl: 'app/events/events-list.component.html'   //relative to index.html
 })
 export class EventsListComponent implements OnInit {
-    events: any = []
+    events: any[]  //any type of array
 
     constructor(private eventService: EventService, private toastrService: ToastrService) {
     }

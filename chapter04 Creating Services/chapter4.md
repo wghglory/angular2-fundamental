@@ -44,7 +44,7 @@ import {EventService} from './shared/event.service'
     templateUrl: 'app/events/events-list.component.html'   //relative to index.html
 })
 export class EventsListComponent implements OnInit {
-    events: any = []
+    events: any[]
 
     //DI
     constructor(private eventService: EventService) {
@@ -117,7 +117,7 @@ import {ToastrService} from '../common/toastr.service'
     templateUrl: 'app/events/events-list.component.html'   //relative to index.html
 })
 export class EventsListComponent implements OnInit {
-    events: any = []
+    events: any[]
 
     constructor(private eventService: EventService, private toastrService: ToastrService) {}
 
