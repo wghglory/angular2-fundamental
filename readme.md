@@ -15,3 +15,4 @@ npm start
 - chapter02: create component using external templates, communication between parent and child components, styling component
 - chapter03: ngIf, ngFor, [hidden], [ngSwitch], [ngClass], [ngStyle]
 - chapter04: create reusable service and inject 3rd party lib as service
+- chapter05: routes, barrels
