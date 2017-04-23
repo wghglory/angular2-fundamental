@@ -16,3 +16,4 @@ npm start
 - chapter03: ngIf, ngFor, [hidden], [ngSwitch], [ngClass], [ngStyle]
 - chapter04: create reusable service and inject 3rd party lib as service
 - chapter05: routes, barrels
+- chapter06: model safety, template-based and model-drive reactive forms, validation
