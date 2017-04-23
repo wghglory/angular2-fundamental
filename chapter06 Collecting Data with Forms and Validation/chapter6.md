@@ -1,5 +1,7 @@
 # Collecting Data with Forms and Validation
 
+Check code at: https://github.com/wghglory/angular2-fundamental
+
 ### Using Models for Type Safety
 
 1) create events/shared/event.model.ts

@@ -1,5 +1,7 @@
 # Exploring the New Template Syntax
 
+Check code at: https://github.com/wghglory/angular2-fundamental
+
 ### *ngFor
 
 events-list.Component has events array: [event] is child component object name

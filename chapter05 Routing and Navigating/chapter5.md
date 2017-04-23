@@ -1,3 +1,7 @@
+# Routing and Navigation
+
+Check code at: https://github.com/wghglory/angular2-fundamental
+
 ### Adding event-detail page
 
 1) shared/event.service.ts

@@ -1,5 +1,7 @@
 # Creating and Communicating Between Components
 
+Check code at: https://github.com/wghglory/angular2-fundamental
+
 ## Creating Our First Data-bound Component
 
 1) create events/events-list.component.ts:
