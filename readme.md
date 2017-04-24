@@ -17,3 +17,4 @@ npm start
 - chapter04: create reusable service and inject 3rd party lib as service
 - chapter05: routes, barrels
 - chapter06: model safety, template-based and model-drive reactive forms, validation
+- chapter07: parent and child component communicating (Input, Output)
