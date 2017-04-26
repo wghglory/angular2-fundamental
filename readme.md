@@ -18,3 +18,4 @@ npm start
 - chapter05: routes, barrels
 - chapter06: model safety, template-based and model-drive reactive forms, validation
 - chapter07: parent and child component communicating (Input, Output)
+- chapter08: reusing components with content projection
