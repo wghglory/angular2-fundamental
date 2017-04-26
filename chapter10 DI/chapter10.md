@@ -1,6 +1,14 @@
-# DI
+# How angular 2 do DI
 
 Check code at: https://github.com/wghglory/angular2-fundamental
+
+when calling eventService, angular2 uses EventService class as key to do DI, it creates an instance of EventService, and assign it to eventService. (angular1 uses string as key to do DI)
+
+```javascript
+export class CreateEventComponent {
+    constructor(private eventService: EventService) { }
+}
+```
 
 ### Using Third Party Global Services - The Problem
 

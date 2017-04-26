@@ -20,3 +20,5 @@ npm start
 - chapter07: parent and child component communicating (Input, Output)
 - chapter08: reusing components with content projection
 - chapter09: pipe, sort, filter
+- chapter10: DI, OpaqueToken
+- chapter11: Creating Directives and Advanced Components
