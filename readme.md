@@ -19,3 +19,4 @@ npm start
 - chapter06: model safety, template-based and model-drive reactive forms, validation
 - chapter07: parent and child component communicating (Input, Output)
 - chapter08: reusing components with content projection
+- chapter09: pipe, sort, filter
