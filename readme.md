@@ -22,3 +22,4 @@ npm start
 - chapter09: pipe, sort, filter
 - chapter10: DI, OpaqueToken
 - chapter11: Creating Directives and Advanced Components
+- chapter12: voter components, service, @input setter; custom validation for location and onlineUrl

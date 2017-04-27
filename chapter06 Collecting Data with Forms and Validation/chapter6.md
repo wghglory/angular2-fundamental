@@ -181,7 +181,7 @@ export class AuthService {
         }
     }
 
-    isAutheticated() {
+    isAuthenticated() {
         return !!this.currentUser;
     }
 }
@@ -229,8 +229,8 @@ export class NavBarComponent {
 
 ```html
 <li>
-    <a *ngIf="!authService.isAutheticated()" [routerLink]="['user/login']">Login</a>
-    <a *ngIf="authService.isAutheticated()" [routerLink]="['user/profile']">Welcome {{authService.currentUser.userName}}</a>
+    <a *ngIf="!authService.isAuthenticated()" [routerLink]="['user/login']">Login</a>
+    <a *ngIf="authService.isAuthenticated()" [routerLink]="['user/profile']">Welcome {{authService.currentUser.userName}}</a>
 </li>
 ```
 
