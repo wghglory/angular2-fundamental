@@ -23,3 +23,4 @@ npm start
 - chapter10: DI, OpaqueToken
 - chapter11: Creating Directives and Advanced Components
 - chapter12: voter components, service, @input setter; custom validation for location and onlineUrl
+- chapter13: Communicating with the Server Using HTTP, Observables, and Rx

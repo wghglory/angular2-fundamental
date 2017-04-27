@@ -1,0 +1,41 @@
+<div class="row" *ngFor="let session of visibleSessions">
+    <div class="col-md-1">
+        <div *ngIf="auth.isAuthenticated()">
+            <upvote (vote)="toggleVote(session)" [count]="session.voters.length" [voted]="userHasVoted(session)"></upvote>
+        </div>
+    </div>
+
+    <div class="col-md-10">
+
+        <!-- multi slot content projection -->
+        <collapsible-well>
+            <div well-title>
+                {{session.name}}
+                <i *ngIf="session.voters.length>3" class="glyphicon glyphicon-fire" style="color:red;"></i>
+            </div>
+
+            <div well-body>
+                <h6>{{session.presenter}}</h6>
+                <span>Duration: {{session.duration | duration}}</span><br />
+                <span>Level: {{session.level}}</span>
+                <p>{{session.abstract}}</p>
+            </div>
+        </collapsible-well>
+
+        <!-- content projection -->
+        <!-- <collapsible-well [title]="session.name">
+            <h6>{{session.presenter}}</h6>
+            <span>Duration: {{session.duration}}</span><br />
+            <span>Level: {{session.level}}</span>
+            <p>{{session.abstract}}</p>
+        </collapsible-well> -->
+
+        <!-- <div class="well">
+            <h4>{{session.name}}</h4>
+            <h6>{{session.presenter}}</h6>
+            <span>Duration: {{session.duration}}</span><br />
+            <span>Level: {{session.level}}</span>
+            <p>{{session.abstract}}</p>
+        </div> -->
+    </div>
+</div>
