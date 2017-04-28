@@ -1,0 +1,25 @@
+<h1>Login</h1>
+<hr>
+<div class="col-md-4">
+    <form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)" autocomplete="off" novalidate>
+        <div class="form-group">
+            <label for="userName">User Name:</label>
+            <em *ngIf="loginForm.controls.userName?.invalid && (loginForm.controls.userName?.touched || mouseoverLogin)">Required</em>
+            <input required (ngModel)="userName" name="userName" id="userName" type="text" class="form-control" placeholder="User Name..." />
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <em *ngIf="loginForm.controls.password?.invalid && (loginForm.controls.password?.touched || mouseoverLogin)">Required</em>
+            <input required (ngModel)="password" name="password" id="password" type="password" class="form-control" placeholder="Password..." />
+        </div>
+        <span (mouseenter)="mouseoverLogin=true" (mouseleave)="mouseoverLogin=false">
+            <button [disabled]="loginForm.invalid" type="submit" class="btn btn-primary">Login</button>
+        </span>
+        <button type="button" (click)="cancel()" class="btn btn-default">Cancel</button>
+    </form>
+    <br>
+    <div *ngIf="loginInvalid" class="alert alert-danger">Invalid login info</div>
+</div>
+
+<!-- hover on the login button, display the reason if user is not allowed login -->
+<!-- disabled button cannot fire event! So have to wrap span around button -->

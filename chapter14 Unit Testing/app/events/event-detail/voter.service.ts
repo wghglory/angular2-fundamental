@@ -27,9 +27,6 @@ export class VoterService {
 
         //put is exactly same code with post
         return this.http.post(url, JSON.stringify({}), options)
-            // .map((res: Response) => {
-            //     return res.json();
-            // })
             .catch(this.handleError).subscribe();
 
     }
