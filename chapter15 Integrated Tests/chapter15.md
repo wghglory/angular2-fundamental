@@ -1,4 +1,4 @@
-# Unit Testing by Jasmine framework and Karma
+# Integration Test
 
 Check code at: https://github.com/wghglory/angular2-fundamental
 
