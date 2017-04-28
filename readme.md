@@ -24,3 +24,5 @@ npm start
 - chapter11: Creating Directives and Advanced Components
 - chapter12: voter components, service, @input setter; custom validation for location and onlineUrl
 - chapter13: Communicating with the Server Using HTTP, Observables, and Rx
+- chapter14: unit testing by jasmine and karma
+- chapter15: integration testing
