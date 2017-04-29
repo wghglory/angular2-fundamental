@@ -9,8 +9,7 @@ import {IEvent} from './shared/index';
 
 @Component({
     //selector: 'events-list',  //not needed since we are using route
-    moduleId: module.id,,
-    templateUrl: 'events-list.component.html',   //relative to index.html
+    templateUrl: 'app/events/events-list.component.html',   //relative to index.html
 })
 export class EventsListComponent implements OnInit {
     events: IEvent[];

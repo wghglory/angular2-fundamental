@@ -1,0 +1,73 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "rules": {
+        "quotemark": [
+            true,
+            "single"
+        ],
+        "whitespace": [
+            false,
+            "check-branch",
+            "check-decl",
+            "check-operator",
+            "check-separator",
+            "check-module",
+            "check-type"
+        ],
+        "no-trailing-whitespace": false,
+        "no-bom": true,
+        "class-name": true,
+        "comment-format": [true,
+            "check-space"
+        ],
+        "indent": [true,
+            "spaces"
+        ],
+        "one-line": [true,
+            "check-open-brace",
+            "check-whitespace"
+        ],
+        "no-var-keyword": false,
+        "semicolon": [true, "always", "ignore-bound-class-methods"],
+        "typedef-whitespace": [
+            true,
+            {
+                "call-signature": "nospace",
+                "index-signature": "nospace",
+                "parameter": "nospace",
+                "property-declaration": "nospace",
+                "variable-declaration": "nospace"
+            },
+            {
+                "call-signature": "onespace",
+                "index-signature": "onespace",
+                "parameter": "onespace",
+                "property-declaration": "onespace",
+                "variable-declaration": "onespace"
+            }
+        ],
+        "next-line": [true,
+            "check-catch",
+            "check-else"
+        ],
+        "no-internal-module": true,
+        "no-inferrable-types": true,
+        "no-null-keyword": true,
+        "boolean-trivia": true,
+        "type-operator-spacing": true,
+        "prefer-const": true,
+        "no-increment-decrement": true,
+        "object-literal-surrounding-space": true,
+        "object-literal-sort-keys": false,
+        "no-type-assertion-whitespace": true,
+        "no-in-operator": true,
+        "no-switch-case-fall-through": true,
+        "triple-equals": true,
+        "jsdoc-format": true,
+        "member-access": false
+    },
+    "rulesDirectory": []
+}

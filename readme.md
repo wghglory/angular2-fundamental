@@ -26,4 +26,5 @@ npm start
 - chapter13: Communicating with the Server Using HTTP, Observables, and Rx
 - chapter14: unit testing by jasmine and karma
 - chapter15: integration testing
-- chapter16: Production
+- chapter16: ProductionModule and Tunning rxjs requests
+- chapter17: Production AOT
